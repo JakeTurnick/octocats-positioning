@@ -6,15 +6,27 @@ html {
 }
 
 .octocat {
-    height: 300px;
+    height: 400px;
     /* width: 400px; */
     display: inline-block;
     margin: 50px;
     border: 1px solid lightgray;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 .octocat > a > img {
     height: 100%;
+}
+.octocat:after {
+	content: ' ';
+    display: inline-block;
+	position: relative;
+	width: 0;
+	height: 0;
+    left: 94%;
+	bottom: 62px;
+	border: 6px solid;
+    transform: rotate(135deg);
+	border-color: lightgray lightgray transparent transparent;
 }
 /* 
 .authors > a > img {
@@ -22,9 +34,6 @@ html {
     height: 120px;
 } */
 
-a > img {
-    height: 200px;
-}
 
 li {
     list-style: none;
